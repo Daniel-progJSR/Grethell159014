@@ -1,0 +1,128 @@
+body{background-image: url(desktop-wallpaper-simple-purple-group-deep-purple-minimalist.jpg);}
+.entrada {
+    text-align: center;
+    color: aliceblue;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 2s ease-out forwards;
+  }
+  
+  @keyframes aparecer {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .entradapequeña {
+    text-align: center;
+    color: aliceblue;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: aparecerPequeña 1.5s ease-out forwards;
+    animation-delay: 1s;
+  }
+  
+  @keyframes aparecerPequeña {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .buton {
+    width: 100%;
+    height: 30px;
+    margin: 3px;
+    border-radius: 8px;
+    text-align: center;
+    color: aliceblue;
+    background-color: blueviolet;
+    border-color: aliceblue;
+    text-shadow: 0 0 6px rgb(0, 0, 0);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 2s ease-out forwards;
+    animation-delay: 2s;}
+
+    .poema {
+      text-shadow: 0 0 6px rgb(0, 0, 0);
+      text-align: center;
+      color: aliceblue;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: aparecerPoema 4.5s ease-out forwards;
+      animation-delay: 3s;
+    }
+    
+    @keyframes aparecerPoema {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .foto-con-texto {
+      position: relative;
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      opacity: 0;
+      transform: scale(0.98);
+      animation: aparecerCapa 3.5s ease-out forwards;
+      animation-delay: 4s;
+    }
+    
+    @keyframes aparecerCapa {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+  
+    
+    .imagen {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+      filter: brightness(70%);
+      transition: filter 0.5s ease;
+    }
+    
+    .capa {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.1rem;
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(70, 45, 100, 0.4);
+      transition: opacity 0.6s ease;
+      z-index: 2;
+    }
+    
+    .imagen {
+      opacity: 0;
+      transform: translateY(25px);
+      animation: aparecerImagen 3.5s ease-out forwards;
+    }
+    
+    @keyframes aparecerImagen {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    
+  

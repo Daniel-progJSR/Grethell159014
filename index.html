@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Te quelo</title>
+</head>
+<body>
+      <h1 class="entrada"> Para mi chiquita 💖</h1>
+      <p class="entradapequeña">Hize esta pequeña página para que veas que te quiero, que me inspiras, que me vuelves loco y que te tengo presente en todo momento.</p>
+      <h3 class="entradapequeña">Toca los siguientes botones en orden 🙃</h3>
+      <button class="buton" onclick="this.innerText = 'Me encanta tu forma de ser, asi de loca y divertida 💞'" >1</button>
+      <button class="buton" onclick="this.innerText = 'Me encanta cuando me abrazas, no quisiera que terminara nunca.'" >2</button>
+      <button class="buton" onclick="this.innerText = 'Pienso en ti en todo momento, eres muy importante en mi vida 👑'" >3</button>
+      
+      <p class="poema">
+        Tu risa rompe la lógica,<br>
+        y convierte lo cotidiano en magia.<br><br>
+        
+        No hay código que explique,<br>
+        lo que siento cuando te pienso.<br><br>
+        
+        Cada línea aquí, cada color,<br>
+        es sólo un intento de decir... te quiero. <br>
+        👑❤️
+        </p>
+        <div class="foto-con-texto" onclick="mostrarFoto(this)">
+
+            <img src="IMG-20250621-WA0245.jpg" alt="Mi foto favorita" class="imagen">
+            <div class="capa">Mi foto favorita de ti 💜</div>
+          </div>
+         
+         <script>
+            function mostrarFoto(contenedor) {
+              const capa = contenedor.querySelector('.capa');
+              const imagen = contenedor.querySelector('.imagen');
+              capa.style.opacity = '0';
+              imagen.style.filter = 'brightness(100%)';
+            }
+        </script>
+            </body>
+            
+</html>
